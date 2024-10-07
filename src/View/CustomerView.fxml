@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CustomerView">
+   <children>
+      <AnchorPane prefHeight="369.0" prefWidth="757.0" style="-fx-background-color: White; ">
+          <children>
+              <Button layoutX="220.0" layoutY="92.0" mnemonicParsing="false" onAction="#addCustomer" prefHeight="37.0" prefWidth="164.0" text="Add Customer">
+                  <font>
+                      <Font size="16.0" />
+                  </font>
+              </Button>
+              <Label layoutX="250.0" layoutY="27.0" text="Customer View">
+                  <font>
+                      <Font name="System Bold" size="30.0" />
+                  </font>
+              </Label>
+              <Button layoutX="545.0" layoutY="92.0" mnemonicParsing="false" onAction="#mainMenu" prefHeight="37.0" prefWidth="155.0" text="Main Menu">
+                  <font>
+                      <Font size="16.0" />
+                  </font>
+              </Button>
+              <TableView fx:id="table" layoutX="56.0" layoutY="129.0" prefHeight="237.0" prefWidth="646.0">
+                  <columns>
+                      <TableColumn fx:id="id" minWidth="75.0" prefWidth="78.0" text="Customer_ID" />
+                      <TableColumn fx:id="name" prefWidth="122.0" text="Customer_Name" />
+                      <TableColumn fx:id="address" prefWidth="124.0" text="Address" />
+                      <TableColumn fx:id="division" prefWidth="103.0" text="Division" />
+                      <TableColumn fx:id="postalCode" prefWidth="96.0" text="Postal_Code" />
+                      <TableColumn fx:id="phone" prefWidth="117.0" text="Phone" />
+                  </columns>
+              </TableView>
+              <Button layoutX="381.0" layoutY="92.0" mnemonicParsing="false" onAction="#deleteCustomer" prefHeight="37.0" prefWidth="164.0" text="Delete Customer">
+                  <font>
+                      <Font size="16.0" />
+                  </font>
+              </Button>
+              <Button layoutX="56.0" layoutY="92.0" mnemonicParsing="false" onAction="#updateCustomer" prefHeight="37.0" prefWidth="164.0" text="Update Customer">
+                  <font>
+                      <Font size="16.0" />
+                  </font>
+              </Button>
+          </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

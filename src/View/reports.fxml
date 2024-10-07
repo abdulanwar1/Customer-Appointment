@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="595.0" prefWidth="716.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.report">
+    <AnchorPane prefHeight="234.0" prefWidth="383.0">
+        <children>
+            <TableView fx:id="report" layoutX="3.0" layoutY="81.0" prefHeight="152.0" prefWidth="344.0">
+                <columns>
+                    <TableColumn fx:id="month" prefWidth="93.0" text="MONTH" />
+                    <TableColumn fx:id="type" prefWidth="133.0" text="TYPE" />
+                    <TableColumn fx:id="numOfApp" prefWidth="117.0" text="# of appointments" />
+                </columns>
+            </TableView>
+            <Text layoutX="36.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Report by Month/Type">
+                <font>
+                    <Font name="System Bold" size="17.0" />
+                </font>
+            </Text>
+            <ComboBox fx:id="Month" layoutX="111.0" layoutY="47.0" prefWidth="150.0" promptText="Month" />
+            <Text layoutX="14.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SELECT MONTH">
+                <font>
+                    <Font name="System Bold" size="12.0" />
+                </font>
+            </Text>
+            <Button fx:id="viewmonth" layoutX="270.0" layoutY="47.0" mnemonicParsing="false" onAction="#Month" text="Enter">
+                <font>
+                    <Font name="System Bold" size="12.0" />
+                </font>
+            </Button>
+        </children>
+    </AnchorPane>
+    <AnchorPane layoutY="290.0" prefHeight="279.0" prefWidth="505.0">
+        <children>
+
+            <TableView fx:id="Contact" layoutX="4.0" layoutY="81.0" prefHeight="200.0" prefWidth="656.0">
+                <columns>
+                    <TableColumn fx:id="appID" prefWidth="44.0" text="App ID" />
+                    <TableColumn fx:id="title" prefWidth="59.0" text="Title" />
+                    <TableColumn fx:id="type2" prefWidth="53.0" text="Type" />
+                    <TableColumn fx:id="description" prefWidth="85.0" text="Description" />
+                    <TableColumn fx:id="start" prefWidth="103.0" text="Start Date/Time" />
+                    <TableColumn fx:id="end" prefWidth="100.0" text="End Date/Time" />
+                    <TableColumn fx:id="custID" text="Customer ID" />
+                </columns>
+            </TableView>
+            <Text layoutX="39.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Report by Contact ID">
+                <font>
+                    <Font name="System Bold" size="17.0" />
+                </font>
+            </Text>
+            <Text layoutX="14.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SELECT CONTACT">
+                <font>
+                    <Font name="System Bold" size="12.0" />
+                </font>
+            </Text>
+            <ComboBox fx:id="ContactID" layoutX="123.0" layoutY="47.0" prefWidth="150.0" promptText="Contact ID" />
+            <Button layoutX="281.0" layoutY="47.0" mnemonicParsing="false" onAction="#contact" text="Enter" />
+         <Text layoutX="369.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact name will be listed in the table">
+            <font>
+               <Font name="System Bold" size="14.0" />
+            </font>
+         </Text>
+
+        </children>
+    </AnchorPane>
+
+    <Button layoutX="525.0" layoutY="81.0" mnemonicParsing="false" onAction="#AppID" prefHeight="27.0" prefWidth="124.0" text="Enter" />
+    <ComboBox fx:id="AppID" layoutX="512.0" layoutY="48.0" prefWidth="150.0" promptText="Appointment ID" />
+    <TableView fx:id="report2" layoutX="458.0" layoutY="117.0" prefHeight="109.0" prefWidth="216.0">
+        <columns>
+            <TableColumn fx:id="AppointmentID" prefWidth="116.0" text="Appointment ID" />
+            <TableColumn fx:id="contact" prefWidth="99.0" text="Contact" />
+        </columns>
+    </TableView>
+    <Text layoutX="383.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Report by Appoinment ID to get Contact">
+        <font>
+          <Font name="System Bold" size="17.0" />
+        </font>
+    </Text>
+
+          <Button layoutX="556.0" layoutY="239.0" mnemonicParsing="false" onAction="#Cancel" prefHeight="41.0" prefWidth="139.0" text="Back to Main Menu">
+        <font>
+        <Font name="System Bold" size="13.0" />
+        </font>
+    </Button>
+
+</AnchorPane>

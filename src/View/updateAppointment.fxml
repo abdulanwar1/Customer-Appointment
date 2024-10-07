@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="498.0" prefWidth="348.0" style="-fx-background-color: White;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.updateAppointment">
+    <children>
+        <Label fx:id="Header" alignment="CENTER" layoutX="7.0" layoutY="7.0" prefHeight="38.0" prefWidth="339.0" text="Update Appointment View" textAlignment="CENTER">            <font>                <Font name="System Bold" size="26.0" />
+        </font>
+        </Label>
+        <TextField fx:id="title" layoutX="14.0" layoutY="157.0" prefHeight="25.0" prefWidth="170.0" promptText="Title" />        <TextField fx:id="description" layoutX="14.0" layoutY="194.0" prefHeight="25.0" prefWidth="170.0" promptText="Description" />        <TextField fx:id="LOcation" layoutX="14.0" layoutY="224.0" prefHeight="25.0" prefWidth="170.0" promptText="Location" />
+        <Button layoutX="14.0" layoutY="464.0" mnemonicParsing="false" onAction="#Save" prefHeight="25.0" prefWidth="73.0" text="SAVE" />
+        <Button layoutX="111.0" layoutY="464.0" mnemonicParsing="false" onAction="#Cancel" prefHeight="25.0" prefWidth="73.0" text="CANCEL" />        <TextField fx:id="appID" disable="true" layoutX="14.0" layoutY="45.0" prefHeight="25.0" prefWidth="170.0" promptText="Appointment ID" style="-fx-font-style: italic;">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </TextField>
+        <ComboBox fx:id="end" layoutX="14.0" layoutY="427.0" prefHeight="25.0" prefWidth="170.0" promptText="End Time" />
+        <ComboBox fx:id="start" layoutX="14.0" layoutY="363.0" prefHeight="25.0" prefWidth="170.0" promptText="Start Time" />
+        <ComboBox fx:id="contact" layoutX="14.0" layoutY="87.0" prefHeight="25.0" prefWidth="170.0" promptText="Contact" />
+        <ComboBox fx:id="custID" layoutX="14.0" layoutY="124.0" prefHeight="25.0" prefWidth="170.0" promptText="Customer ID" />
+        <DatePicker fx:id="appDate" layoutX="14.0" layoutY="329.0" prefHeight="25.0" prefWidth="170.0" promptText="Start Date" />
+        <ComboBox fx:id="userID" layoutX="14.0" layoutY="293.0" prefHeight="25.0" prefWidth="170.0" promptText="User ID" />
+        <ComboBox fx:id="Type" layoutX="14.0" layoutY="256.0" prefHeight="25.0" prefWidth="170.0" promptText="Type" />
+    </children>
+</AnchorPane>

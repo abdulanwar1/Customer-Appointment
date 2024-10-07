@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="382.0" prefWidth="313.0" style="-fx-background-color: White; " xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.addCustomer">
+    <children>
+        <Label layoutX="15.0" layoutY="14.0" prefHeight="45.0" prefWidth="285.0" text="Add Customer View">
+            <font>
+                <Font name="System Bold" size="30.0" />
+            </font>
+        </Label>
+        <VBox layoutX="155.0" layoutY="59.0" prefHeight="250.0" prefWidth="150.0" spacing="16.0">
+            <children>
+                <TextField fx:id="id" disable="true" prefHeight="18.0" prefWidth="150.0" />
+                <TextField fx:id="name" />
+                <TextField fx:id="address" />
+                <ComboBox fx:id="country" onAction="#divBasedOnCntry" prefWidth="150.0" promptText="Country" />
+                <ComboBox fx:id="division" prefWidth="150.0" promptText="Division" />
+                <TextField fx:id="postal" />
+                <TextField fx:id="phone" />
+            </children>
+        </VBox>
+        <VBox alignment="CENTER_RIGHT" layoutX="15.0" layoutY="60.0" prefHeight="235.0" prefWidth="121.0" spacing="25.0">
+            <children>
+                <Label prefHeight="25.0" text="Customer ID:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+                </Label>
+                <Label prefHeight="25.0" text="Customer Name:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+                </Label>
+                <Label prefHeight="25.0" text="Address:">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Label>
+                <Label prefHeight="25.0" text="Country:">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Label>
+                <Label prefHeight="25.0" text="Division">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Label>
+                <Label prefHeight="25.0" text="Postal Code">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Label>
+            <Label layoutX="57.0" layoutY="10.0" prefHeight="25.0" text="Phone Number">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            </children>
+        </VBox>
+        <Button layoutX="1.0" layoutY="338.0" mnemonicParsing="false" onAction="#onActionAddCustomer" prefHeight="40.0" prefWidth="150.0" text="SAVE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <Button layoutX="155.0" layoutY="338.0" mnemonicParsing="false" onAction="#onActionCancelAdd" prefHeight="40.0" prefWidth="150.0" text="CANCEL">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>
